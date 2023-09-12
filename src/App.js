@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fi";
+import {
+  FaChevronRight,
+  FaChevronLeft,
+  FiChevronLeft,
+  FiChevronRight,
+} from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
 
@@ -27,6 +32,12 @@ function App() {
             </article>
           );
         })}
+        <button className="prev">
+          <FiChevronLeft />
+        </button>
+        <button className="next">
+          <FiChevronRight />
+        </button>
       </div>
     </section>
   );
